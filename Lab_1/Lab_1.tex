@@ -1,4 +1,4 @@
-\documentclass[letter,14pt]{article}
+\documentclass[a4paper,14pt]{article}
 
 % Preamble
 \usepackage[utf8]{inputenc}
@@ -17,7 +17,24 @@
 		\let\endtitlepage\relax
 	\end{titlepage}
 	
-	\section{Demostrar: $(p \lor q) \land (\neg p \land (\neg p \land q)) \equiv \neg p \land q$.} 
+	\section{Demostrar: $(p \lor q) \land (\neg p \land (\neg p \land q)) \equiv \neg p \land q$}
+	\textbf{Teo:} $(p \lor q) \land (\neg p \land (\neg p \land q)) \equiv \neg p \land q$ \newline
+	\textbf{Dem:} \newline 
+	\[ (p \lor q) \land (\neg p \land (\neg p \land q)) \]
+	\[<DeMorgan>\]
+	
+	\section{}
+	Considere el operador ternario A definido por el siguiente axioma:
+	\[ Def A: A(x,y,z) \equiv (x \rightarrow y \lor z) \]
+	
+	\noindent\textbf{Teo: $A(p \lor q, q, r) \equiv A(p, q, r)$} \newline
+	\textbf{Dem: } 
+	\[ A(p \lor q, q, r) \]
+	\[<Def A> \]
+	
+	\vspace{1cm}\noindent\textbf{Teo: $A(p, q, r) \equiv A(p, q, false) \lor A(p, r, false)$} \newline
+	\textbf{Dem:}
+	\[ <Def A> \]
 	
 	
 \end{document}
